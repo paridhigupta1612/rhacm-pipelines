@@ -4,9 +4,9 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   labels:
-    app: bookinfo
-  name: bookinfo-placement-1
-  namespace: bookinfo
+    app: bookinfo-dev-deployment
+  name: bookinfo-dev-deployment-placement-1
+  namespace: bookinfo-dev-deployment
 spec:
   clusterSelector:
     matchLabels:
