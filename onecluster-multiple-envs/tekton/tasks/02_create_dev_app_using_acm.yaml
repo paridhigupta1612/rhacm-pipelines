@@ -15,6 +15,10 @@ spec:
           echo "**** DEV ENVIRONMENT: Creating application on RH ACM ****"
           oc apply -f onecluster-multiple-envs/rhacm/dev/application.yaml
 
+
+          echo "**** DEV ENVIRONMENT: Creating channel on RH ACM ****"
+          oc apply -f onecluster-multiple-envs/rhacm/dev/channel.yaml
+
           echo "**** DEV ENVIRONMENT: Creating subscription on RH ACM ****"
           oc apply -f onecluster-multiple-envs/rhacm/dev/subscription.yaml
           
