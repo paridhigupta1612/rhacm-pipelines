@@ -8,12 +8,12 @@ metadata:
     apps.open-cluster-management.io/git-path: 
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
-    app: bookinfo-dev-deployment
-  name: bookinfo-dev-deployment-subscription-1
-  namespace: bookinfo-dev-deployment
+    app: bookinfo-acm-dev
+  name: bookinfo-acm-dev-subscription-1
+  namespace: bookinfo-acm-dev
 spec:
   channel: ggithubcom-rachnadodia-service-mesh-app-ns/ggithubcom-rachnadodia-service-mesh-app
   placement:
     placementRef:
       kind: PlacementRule
-      name: bookinfo-dev-deployment-placement-1
+      name: bookinfo-acm-dev-placement-1
