@@ -3,12 +3,11 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: dev-cluster
-  namespace: etherpad-acm-dev
+  labels:
+    app: bookinfo
+  name: bookinfo-placement-1
+  namespace: bookinfo
 spec:
-  clusterConditions:
-    - type: ManagedClusterConditionAvailable
-      status: "True"
   clusterSelector:
     matchLabels:
-      environment: prd
+      'env': 'dev'
