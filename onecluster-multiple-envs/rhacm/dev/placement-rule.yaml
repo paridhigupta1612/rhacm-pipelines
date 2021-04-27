@@ -6,7 +6,7 @@ metadata:
   labels:
     app: bookinfo-acm-dev
   name: bookinfo-acm-dev-placement-1
-  namespace: bookinfo-acm-dev-deployment
+  namespace: bookinfo-acm-dev
 spec:
   clusterSelector:
     matchLabels:
