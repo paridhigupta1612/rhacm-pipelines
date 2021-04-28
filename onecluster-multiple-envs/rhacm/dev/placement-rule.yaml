@@ -5,7 +5,7 @@ kind: PlacementRule
 metadata:
   labels:
     app: bookinfo-acm-dev
-  name: bookinfo-acm-dev-placement-1
+  name: bookinfo-acm-dev
   namespace: bookinfo-acm-dev
 spec:
   clusterSelector:
