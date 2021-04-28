@@ -16,4 +16,4 @@ spec:
   placement:
     placementRef:
       kind: PlacementRule
-      name: bookinfo-acm-dev-placement-1
+      name: bookinfo-acm-dev
