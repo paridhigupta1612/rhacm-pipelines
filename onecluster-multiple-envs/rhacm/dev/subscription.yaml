@@ -5,14 +5,14 @@ kind: Subscription
 metadata:
   annotations:
     apps.open-cluster-management.io/git-branch: main
-    apps.open-cluster-management.io/git-path: 
+    apps.open-cluster-management.io/git-path:
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
     app: bookinfo-acm-dev
   name: bookinfo-acm-dev
   namespace: bookinfo-acm-dev
 spec:
-  channel: ggithubcom-rachnadodia-service-mesh-app-ns/ggithubcom-rachnadodia-service-mesh-app
+  channel: bookinfo-acm-dev/bookinfo-app-latest
   placement:
     placementRef:
       kind: PlacementRule
