@@ -5,5 +5,5 @@ metadata:
   name: bookinfo-app-latest
   namespace: bookinfo-acm-dev
 spec:
-  type: Git
-  pathname: 'https://github.com/RachnaDodia/Service-mesh-app.git'
+  type: GitHub
+  pathname: 'https://github.com/RachnaDodia/rhacm-pipelines.git'
