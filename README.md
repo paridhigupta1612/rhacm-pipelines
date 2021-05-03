@@ -2,8 +2,6 @@
 > oc new-project bookfo-cicd
 
 >  oc get serviceaccount pipeline
-NAME       SECRETS   AGE
-pipeline   2         29s
 
 > cd onecluster-multiple-envs/tekton
 
