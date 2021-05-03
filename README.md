@@ -1,5 +1,5 @@
 --RACHNA DODIA BOOKINFO APP---
-> oc new-project bookfo-cicd
+> oc new-project bookifo-cicd
 
 >  oc get serviceaccount pipeline
 
