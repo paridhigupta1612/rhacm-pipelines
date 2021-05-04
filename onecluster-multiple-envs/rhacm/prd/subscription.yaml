@@ -1,18 +1,17 @@
-
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: etherpad-acm-prd
-  namespace: etherpad-acm-prd
+  name: bookinfo-acm-prod
+  namespace: bookinfo-acm-prod
   labels:
-    app: etherpad-acm-prd
+    app: bookinfo-acm-prod
   annotations:
-    apps.open-cluster-management.io/github-path: app-resources/etherpad/prd
+    apps.open-cluster-management.io/github-path: app-resources/bookinfo/dev
 spec:
-  channel: etherpad-acm-prd/etherpad-app-latest
+  channel: bookinfo-acm-prod/bookinfo-app-latest
   placement:
     placementRef:
       kind: PlacementRule
-      name: prd-cluster
+      name: bookinfo-acm-prod
 
