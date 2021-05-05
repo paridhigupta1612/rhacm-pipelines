@@ -3,12 +3,12 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: etherpad-dev-deployment
+  name: bookinfo-dev-deployment
 spec:
   workspaces:
     - name: source  
   steps:
-    - name: etherpad-dev-deployment
+    - name: bookinfo-dev-deployment
       image: quay.io/openshift/origin-cli:latest
       workingDir: /workspace/source  
       command: ["/bin/bash", "-c"]
