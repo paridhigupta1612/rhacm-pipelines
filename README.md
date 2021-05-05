@@ -1,9 +1,12 @@
---RACHNA DODIA BOOKINFO APP---
+-- BOOKINFO APP---
+
+---- https://github.com/RachnaDodia/Service-mesh-app.git-----
+
 > oc new-project bookinfo-cicd
 
 >  oc get serviceaccount pipeline
 
-> cd onecluster-multiple-envs/tekton
+> cd onecluster-multiple-envs/tekton or cd multipleclusters-multiple-envs/tekton
 
 > oc create -f tasks/01_create_namespaces.yaml
 
