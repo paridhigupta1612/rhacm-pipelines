@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: etherpad-acm-dev
+  name: bookinfo-acm-dev
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: etherpad-acm-qa
+  name: bookinfo-acm-qa
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: etherpad-acm-prd
+  name: bookinfo-acm-prd
