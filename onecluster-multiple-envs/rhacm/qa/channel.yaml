@@ -3,8 +3,8 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
-  name: etherpad-app-latest
-  namespace: etherpad-acm-qa
+  name: bookinfo-app-latest
+  namespace: bookinfo-acm-qa
 spec:
   type: GitHub
-  pathname: https://github.com/giofontana/rhacm-pipelines.git
+  pathname: https://github.com/paridhigupta1612/rhacm-pipelines.git
