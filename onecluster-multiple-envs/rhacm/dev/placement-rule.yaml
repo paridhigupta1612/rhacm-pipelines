@@ -10,4 +10,4 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      'env': 'dev'
+      environment: nonprod
