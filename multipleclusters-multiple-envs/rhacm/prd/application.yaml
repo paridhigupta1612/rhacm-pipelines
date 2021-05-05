@@ -3,8 +3,8 @@
 apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
-  name: etherpad-acm-prd
-  namespace: etherpad-acm-prd
+  name: bookinfo-acm-prd
+  namespace: bookinfo-acm-prd
 spec:
   componentKinds:
   - group: apps.open-cluster-management.io
@@ -15,4 +15,4 @@ spec:
     - key: app
       operator: In
       values:
-      - etherpad-acm-prd
+      - bookinfo-acm-prd
