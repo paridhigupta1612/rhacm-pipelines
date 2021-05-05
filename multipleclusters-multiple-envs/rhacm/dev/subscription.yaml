@@ -3,14 +3,14 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: etherpad-acm-dev
-  namespace: etherpad-acm-dev
+  name: bookinfo-acm-dev
+  namespace: bookinfo-acm-dev
   labels:
-    app: etherpad-acm-dev
+    app: bookinfo-acm-dev
   annotations:
-    apps.open-cluster-management.io/github-path: app-resources/etherpad/dev
+    apps.open-cluster-management.io/github-path: app-resources/bookinfo/dev
 spec:
-  channel: etherpad-acm-dev/etherpad-app-latest
+  channel: bookinfo-acm-dev/bookinfo-app-latest
   placement:
     placementRef:
       kind: PlacementRule
