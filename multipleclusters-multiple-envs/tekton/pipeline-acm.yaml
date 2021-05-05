@@ -14,7 +14,7 @@ spec:
   - name: git-url
     type: string
     description: url of the git repo for the code of deployment
-    default: "https://github.com/giofontana/rhacm-pipelines.git"
+    default: "https://github.com/paridhigupta1612/rhacm-pipelines.git"
   - name: git-revision
     type: string
     description: revision to be used from repo of the code for deployment
@@ -47,32 +47,32 @@ spec:
     runAfter:
     - fetch-repository     
 
-  - name: etherpad-dev-deployment
+  - name: bookinfo-dev-deployment
     taskRef:
       kind: Task        
-      name: etherpad-dev-deployment
+      name: bookinfo-dev-deployment
     workspaces:
     - name: source
       workspace: shared-workspace
     runAfter:
     - create-namespaces      
 
-  - name: etherpad-qa-deployment
+  - name: bookinfo-qa-deployment
     taskRef:
       kind: Task        
-      name: etherpad-qa-deployment
+      name: bookinfo-qa-deployment
     workspaces:
     - name: source
       workspace: shared-workspace
     runAfter:
-    - etherpad-dev-deployment  
+    - bookinfo-dev-deployment  
 
-  - name: etherpad-prd-deployment
+  - name: bookinfo-prd-deployment
     taskRef:
       kind: Task        
-      name: etherpad-prd-deployment
+      name: bookinfo-prd-deployment
     workspaces:
     - name: source
       workspace: shared-workspace
     runAfter:
-    - etherpad-qa-deployment   
+    - bookinfo-qa-deployment   
