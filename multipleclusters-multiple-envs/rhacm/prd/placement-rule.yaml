@@ -4,7 +4,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: prd-and-dr-cluster
-  namespace: etherpad-acm-prd
+  namespace: bookinfo-acm-prd
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable
