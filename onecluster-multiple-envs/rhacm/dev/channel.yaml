@@ -6,4 +6,4 @@ metadata:
   namespace: bookinfo-acm-dev
 spec:
   type: GitHub
-  pathname: 'https://github.com/RachnaDodia/rhacm-pipelines.git'
+  pathname: 'https://github.com/paridhigupta1612/rhacm-pipelines.git'
